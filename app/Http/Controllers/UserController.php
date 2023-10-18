@@ -11,7 +11,7 @@ class UserController extends Controller
      public function studentlist(){
 
         $student = Student::all();
-       return view('studentlist ',['students'=> $student ]);
+       return view('studentlist',['students'=> $student ]);
 
      }
 
@@ -34,7 +34,7 @@ class UserController extends Controller
     }
 
     public function delete(Student $student){
-        // dd($student)->toarray();
+       
         $student->delete();
         return redirect()->route('studentlist' );
    

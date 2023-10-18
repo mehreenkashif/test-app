@@ -24,7 +24,7 @@ class CustomAuth
       }
       else if ($path !=="login" && Session::get('student') && $path !== "register" && !Session ::get('student'))
       {
-        return redirect('register');
+        return redirect('/register');
       
       }
 

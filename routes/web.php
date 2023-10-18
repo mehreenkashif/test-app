@@ -14,7 +14,7 @@ Route::delete('/{student}/delete', [UserController::class ,'delete' ])->name('de
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-    // // return redirect()->route('studentlist' );
+    //  return redirect()->route('studentlist' );
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

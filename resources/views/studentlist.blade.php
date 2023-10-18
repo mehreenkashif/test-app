@@ -26,7 +26,9 @@
  }
 
  .btn-custom{
-    margin-left: 65rem;
+ 
+ margin-left: 65rem;
+
  }
 
 </style>
@@ -35,6 +37,7 @@
 <body>
 
     <div class="container">
+
     <h1 class="heading">Students List</h1>
    
     <a href=" {{route('create')}}"  type="button" class="btn btn-primary btn-custom">ADD STUDENT</a>
